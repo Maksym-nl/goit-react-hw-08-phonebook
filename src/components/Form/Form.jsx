@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { addContact } from '../../redux/operations';
+import { addContact } from '../../redux/contacts/operations';
 import { GoSearch } from 'react-icons/go';
 import { NameLabel, Input } from './Form.styled';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { nanoid } from 'nanoid';
-import { getContacts } from '../../redux/selectors';
+import { getContacts } from '../../redux/contacts/selectors';
 
 export const Form = () => {
   const [name, setName] = useState('');

@@ -7,12 +7,12 @@ import {
 } from './Contactlist.styled';
 import { ImCross } from 'react-icons/im';
 import { useSelector, useDispatch } from 'react-redux';
-import { getFilterContacts } from '../../redux/selectors';
-import { deleteContact } from '../../redux/operations';
+import { getFilterContacts } from '../../redux/contacts/selectors';
+import { deleteContact } from '../../redux/contacts/operations';
 
 export function ContactList() {
   const contacts = useSelector(getFilterContacts);
-  console.log(contacts);
+  // console.log(contacts);
   const dispatch = useDispatch();
   return (
     <List>
